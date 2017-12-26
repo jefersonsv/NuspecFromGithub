@@ -17,8 +17,10 @@ Utility to create .nuspec file from github and project assembly
 * Get version file of AssemblyInfo.cs by regex
 
 # How to run
+On folder: .\bin\Debug
+
 ```bash
-.\bin\Debug>NuspecFromGithub.exe -p ..\..\ --force -g jefersonsv/NuspecFromGithub
+NuspecFromGithub.exe -p ..\..\ --force -g jefersonsv/NuspecFromGithub
 ```
 
 This command will generate the **NuspecFromGithub.nuspec** in same folder of .csproj file with content
@@ -42,6 +44,17 @@ This command will generate the **NuspecFromGithub.nuspec** in same folder of .cs
   </metadata>
 </package>
 ```
+
+After file created, on same folder of .csproj file run below command to create .nupkg:
+* For NuGet Version: 4.3.0.4406
+
+```bash
+nuget pack
+nuget.exe setApiKey <api-key>
+nuget push <nupgk-generated-file>.nupkg -Source https://www.nuget.org/api/v2/package
+```
+
+The command setApi it's option if the key has been configureted previous
 
 # Tips
 * https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package

@@ -81,7 +81,17 @@ namespace NuspecFromGithub
                 xml.Element("owners").Value = author["name"].Value<string>();
                 xml.Element("licenseUrl").Value = license["html_url"].Value<string>();
                 xml.Element("projectUrl").Value = repo["html_url"].Value<string>();
-                xml.Element("iconUrl").Value = string.Empty;
+
+                // Get icon
+                var logo = Directory.GetFiles(fullPath, "logo.png", SearchOption.AllDirectories);
+                if (logo.FirstOrDefault() != null)
+                {
+                    xml.Element("iconUrl").Value = $"https://github.com/{github}/" + repo["default_branch"].ToString() + "/logo.png";
+                }
+                else
+                {
+                    xml.Element("iconUrl").Value = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/NuGet_project_logo.svg/220px-NuGet_project_logo.svg.png";
+                }
                 xml.Element("description").Value = repo["description"].Value<string>();
                 xml.Element("releaseNotes").Value = master["commit"]["commit"]["message"].Value<string>();
                 //doc.Element("copyright").Value = repo["html_url"].ToString();

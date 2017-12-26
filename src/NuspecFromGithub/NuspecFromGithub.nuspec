@@ -8,10 +8,10 @@
     <owners>Jeferson Tenorio</owners>
     <licenseUrl>http://choosealicense.com/licenses/mit/</licenseUrl>
     <projectUrl>https://github.com/jefersonsv/NuspecFromGithub</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/NuGet_project_logo.svg/220px-NuGet_project_logo.svg.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Utility to create .nuspec file from github and project assembly</description>
-    <releaseNotes>implementation</releaseNotes>
+    <releaseNotes>change help text</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags></tags>
   </metadata>
