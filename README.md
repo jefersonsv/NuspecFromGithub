@@ -46,7 +46,6 @@ This command will generate the **NuspecFromGithub.nuspec** in same folder of .cs
 # Tips
 * https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package
 * https://blog.codeinside.eu/2017/02/13/create-nuget-packages-with-cake/
-* 
 
 # Thanks
 
