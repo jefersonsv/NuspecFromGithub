@@ -24,7 +24,7 @@ NuspecFromGithub.exe -p ..\..\ --force -g jefersonsv/NuspecFromGithub
 ```
 
 This command will generate the **NuspecFromGithub.nuspec** in same folder of .csproj file with content
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <package>
   <metadata>
@@ -49,7 +49,7 @@ After file created, on same folder of .csproj file run below command to create .
 * For NuGet Version: 4.3.0.4406
 
 ```bash
-nuget pack
+nuget pack NuspecFromGithub.nuspec -IncludeReferencedProjects
 nuget.exe setApiKey <api-key>
 nuget push <nupgk-generated-file>.nupkg -Source https://www.nuget.org/api/v2/package
 ```
