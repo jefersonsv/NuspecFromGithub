@@ -2,13 +2,13 @@
 <package>
   <metadata>
     <id>NuspecFromGithub</id>
-    <version>1.0.0.0</version>
+    <version>1.0.2.0</version>
     <title>Utility to create .nuspec file from github and project assembly</title>
     <authors>Jeferson Tenorio</authors>
     <owners>Jeferson Tenorio</owners>
     <licenseUrl>http://choosealicense.com/licenses/mit/</licenseUrl>
     <projectUrl>https://github.com/jefersonsv/NuspecFromGithub</projectUrl>
-    <iconUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/NuGet_project_logo.svg/220px-NuGet_project_logo.svg.png</iconUrl>
+    <iconUrl>https://github.com/CommandLineParser.Arguments.ValueArgument`1[System.String]/master/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Utility to create .nuspec file from github and project assembly</description>
     <releaseNotes>change help text</releaseNotes>
