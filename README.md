@@ -59,6 +59,7 @@ The command setApi it's option if the key has been configureted previous
 # Tips
 * https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package
 * https://blog.codeinside.eu/2017/02/13/create-nuget-packages-with-cake/
+* https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference
 
 # Thanks
 
