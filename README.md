@@ -17,7 +17,7 @@ Utility to create .nuspec file from github and project assembly
 * Get version file of AssemblyInfo.cs by regex
 
 # How to run
-On folder: .\bin\Debug
+Get the realease on: https://github.com/jefersonsv/NuspecFromGithub/releases/tag/1.0.0
 
 ```bash
 NuspecFromGithub.exe -p ..\..\ --force -g jefersonsv/NuspecFromGithub
