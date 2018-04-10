@@ -18,16 +18,23 @@ Utility to create .nuspec file from github and project assembly
 
 # How to run
 
-Get binary on portable mode or nuget reference and execute:
+Get binary file on github releases, chocolatey or adding nuget reference and execute:
 
 ```bash
 NuspecFromGithub.exe -p ..\..\ --force -g jefersonsv/NuspecFromGithub
 ```
 
-## Portable
+NuspecFromGithub
+
+## From github releases
 Get the realease on: https://github.com/jefersonsv/NuspecFromGithub/releases/tag/1.0.0
 
-## Nuget Reference
+## From chocolatey
+```bash
+choco install NuspecFromGithub
+```
+
+## Adding nuget reference
 ```bash
 PM> Install-Package NuspecFromGithub
 ```
