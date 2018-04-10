@@ -1,18 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B0518925-D793-4193-8C1D-37AD2E4A2ECE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src\NuspecFromGithub", "src\NuspecFromGithub\NuspecFromGithub.csproj", "{005B5AEF-956E-46E8-89EF-534F44A37FD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuspecFromGithub", "src\NuspecFromGithub\NuspecFromGithub.csproj", "{005B5AEF-956E-46E8-89EF-534F44A37FD8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{14154EF5-EB98-42F7-A411-6597813D8EC5}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		LICENSE = LICENSE
+		nuspecfromgithub-logo.png = nuspecfromgithub-logo.png
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuspecFromGithub.Netcore", "src\NuspecFromGithub.netcore\NuspecFromGithub.Netcore.csproj", "{DB088251-57B7-49B3-B21E-C33872BFEBBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuspecFromGithub.Standard", "src\NuspecFromGithub.Standard\NuspecFromGithub.Standard.csproj", "{333FB796-E4A2-4641-9FEE-483DABEE5BFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,12 +29,22 @@ Global
 		{005B5AEF-956E-46E8-89EF-534F44A37FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{005B5AEF-956E-46E8-89EF-534F44A37FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{005B5AEF-956E-46E8-89EF-534F44A37FD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB088251-57B7-49B3-B21E-C33872BFEBBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB088251-57B7-49B3-B21E-C33872BFEBBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB088251-57B7-49B3-B21E-C33872BFEBBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB088251-57B7-49B3-B21E-C33872BFEBBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{333FB796-E4A2-4641-9FEE-483DABEE5BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333FB796-E4A2-4641-9FEE-483DABEE5BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333FB796-E4A2-4641-9FEE-483DABEE5BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333FB796-E4A2-4641-9FEE-483DABEE5BFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{005B5AEF-956E-46E8-89EF-534F44A37FD8} = {B0518925-D793-4193-8C1D-37AD2E4A2ECE}
+		{DB088251-57B7-49B3-B21E-C33872BFEBBD} = {B0518925-D793-4193-8C1D-37AD2E4A2ECE}
+		{333FB796-E4A2-4641-9FEE-483DABEE5BFE} = {B0518925-D793-4193-8C1D-37AD2E4A2ECE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E8979A7-5E11-4E37-A06F-CC528B68B6A0}

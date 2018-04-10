@@ -1,6 +1,7 @@
 ﻿using CommandLineParser.Arguments;
 using CommandLineParser.Exceptions;
 using Newtonsoft.Json.Linq;
+using NuspecFromGithub.Standard;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -17,21 +18,7 @@ namespace NuspecFromGithub
     {
         private static void Main(string[] args)
         {
-            CommandLineParser.CommandLineParser parser = new CommandLineParser.CommandLineParser();
-
-            ValueArgument<string> project = new ValueArgument<string>(
-                'p', "project", "Specify the project path file");
-            project.Optional = false;
-
-            ValueArgument<string> github = new ValueArgument<string>(
-                'g', "github", "Specify the username/repository of github");
-            github.Optional = false;
-
-            SwitchArgument force = new SwitchArgument('f', "force", "Force recreate file", false);
-
-            parser.Arguments.Add(project);
-            parser.Arguments.Add(force);
-            parser.Arguments.Add(github);
+            CommandLineParser.CommandLineParser parser = ArgumentParser.Get();
 
             try
             {
