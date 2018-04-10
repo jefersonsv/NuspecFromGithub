@@ -17,13 +17,25 @@ Utility to create .nuspec file from github and project assembly
 * Get version file of AssemblyInfo.cs by regex
 
 # How to run
-Get the realease on: https://github.com/jefersonsv/NuspecFromGithub/releases/tag/1.0.0
+
+Get binary on portable mode or nuget reference and execute:
 
 ```bash
 NuspecFromGithub.exe -p ..\..\ --force -g jefersonsv/NuspecFromGithub
 ```
 
+## Portable
+Get the realease on: https://github.com/jefersonsv/NuspecFromGithub/releases/tag/1.0.0
+
+## Nuget Reference
+```bash
+PM> Install-Package NuspecFromGithub
+```
+
+# Result
+
 This command will generate the **NuspecFromGithub.nuspec** in same folder of .csproj file with content
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <package>
@@ -48,11 +60,19 @@ This command will generate the **NuspecFromGithub.nuspec** in same folder of .cs
 After file created, on same folder of .csproj file run below command to create .nupkg:
 * For NuGet Version: 4.3.0.4406
 
+Set your nuget ApiKey before below steps running the command (it's necessary only first time):
+```bash
+nuget.exe setApiKey <api-key>
+```
+
+To put your package to Nuget execute:
+
 ```bash
 nuget pack NuspecFromGithub.nuspec -IncludeReferencedProjects
-nuget.exe setApiKey <api-key>
 nuget push <nupgk-generated-file>.nupkg -Source https://www.nuget.org/api/v2/package
 ```
+
+
 
 The command setApi it's option if the key has been configureted previous
 
