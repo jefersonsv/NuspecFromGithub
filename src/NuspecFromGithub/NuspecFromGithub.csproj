@@ -86,7 +86,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="logo.png" />
+    <ProjectReference Include="..\NuspecFromGithub.Standard\NuspecFromGithub.Standard.csproj">
+      <Project>{333FB796-E4A2-4641-9FEE-483DABEE5BFE}</Project>
+      <Name>NuspecFromGithub.Standard</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
